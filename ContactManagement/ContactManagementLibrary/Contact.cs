@@ -34,7 +34,7 @@ namespace ContactManagementLibrary
         public string Email { get; set; }
 
         /// <summary>
-        /// Tel.
+        /// Contact Tel.
         /// </summary>
         public string Tel { get; set; }
 
