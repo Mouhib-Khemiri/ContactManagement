@@ -38,5 +38,47 @@ namespace ContactManagementLibrary
         /// </summary>
         public string Tel { get; set; }
 
+        /// <summary>
+        /// Create a new object.
+        /// </summary>
+        /// <param name="id">Object ID.</param>
+        /// <param name="firstName">First Name.</param>
+        /// <param name="lastName">Last Name.</param>
+        /// <param name="address">Address.</param>
+        /// <param name="email">Email.</param>
+        /// <param name="tel">Tel.</param>
+        public Contact(int id, string firstName, string lastName, string address, string email, string tel)
+        {
+            ID = id;
+            FirstName = firstName;
+            LastName = lastName;
+            Address = address;
+            Email = email;
+            Tel = tel;
+        }
+
+        /// <summary>
+        /// Shows all properties.
+        /// </summary>
+        public void ShowProperties()
+        {
+            Console.WriteLine("Contact Properties:");
+            Console.WriteLine(ID);
+            Console.WriteLine(FirstName);
+            Console.WriteLine(LastName);
+            Console.WriteLine(Address);
+            Console.WriteLine(Email);
+            Console.WriteLine(Tel);
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Gets full name.
+        /// </summary>
+        public void GetFullName()
+        {
+            Console.WriteLine(FirstName);
+            Console.WriteLine(LastName);
+        }
     }
 }
