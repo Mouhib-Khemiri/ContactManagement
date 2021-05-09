@@ -55,6 +55,21 @@ namespace ContactManagementLibrary
             Address = address;
             Email = email;
             Tel = tel;
+
+            if (id > 10)
+            {
+                ID = 0;
+            }
+
+            if (lastName == "")
+            {
+                LastName = "Anonym";
+            }
+        }
+
+        public Contact()
+        {
+
         }
 
         /// <summary>
